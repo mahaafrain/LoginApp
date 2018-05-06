@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".basicreg">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_adb_black_24dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/rounded"
+        android:text="Register"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded"
+        android:text="Login"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <EditText
+        android:id="@+id/cpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="106dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        app:srcCompat="@drawable/thirty" />
+</RelativeLayout>
